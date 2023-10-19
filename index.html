@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+</head>
+<body>
+ <!-- bg -->
+ <div class="flex item-center justify-center min-h-screen bg-cyan-50">
+    <!-- card -->
+    <div class="bg-yellow-500 p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+        <!-- menu -->
+        <div class="flex flex-col item-center justify-center space-y-3 md:flex-row md:space-y-0 
+        md:space-x-8 md:mb-24 md:justify-end">
+        <!-- items -->
+        <div class="group">
+            <a href="#">Vector</a>
+            <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+            </div>
+        </div>
+        <div class="group">
+            <a href="#">illustraion</a>
+            <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+            </div>
+        </div>
+        <div class="group">
+            <a href="#">images</a>
+            <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+            </div>
+        </div>
+        <div class="group">
+            <a href="#">icons</a>
+            <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+            </div>
+        </div>
+    </div>
+    <!-- search -->
+    <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+        <!-- input -->
+        <div class="flex justify-between border-b">
+            <input  type="text" class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none" 
+            placeholder="Search">
+            <button>
+                <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="10" cy="10" r="7"></circle>
+                <line x1="21" y1="21" x2="15" y2="15"></line>
+                </svg>
+            </button>
+        </div>
+        <!--upload  -->
+        <button class="py-3 px-14 text-lg font-normal text-white bg-black border border-black 
+        rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black">
+         Upload 
+        </button>
+    </div>
+    <!-- gallery -->
+<div class="grid gap-4 md:grid-cols-3 ">
+    <!-- img -->
+    <div class="relative group">
+        <img src="assets/images/girl.jpg" alt="" class="w-72">
+        <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 
+        group-hover:opacity-100 bg-opacity-40">
+    <div class="flex justify-between w-full">
+        <div class="font-normal">
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-xs">11245 likes - 2235 shares</p>
+        </div>
+        <div class="flex item-center">
+            <img src="assets/images/bookmark-icon.ico" alt="bookmark">
+        </div>
+    </div>
+    </div>
+    </div>
+ <!-- img 2 -->
+ <div class="relative group">
+    <img src="assets/images/cars.jpg" alt="" class="w-72">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 
+    group-hover:opacity-100 bg-opacity-40">
+<div class="flex justify-between w-full">
+    <div class="font-normal">
+        <p class="text-sm">new race car </p>
+        <p class="text-xs">1145 likes - 235 shares</p>
+    </div>
+    <div class="flex item-center">
+        <img src="assets/images/bookmark-icon.ico" alt="bookmark">
+    </div>
+</div>
+</div>
+</div>
+ <!-- img 3-->
+ <div class="relative group">
+    <img src="assets/images/bike.jpg" alt="" class="w-72">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 
+    group-hover:opacity-100 bg-opacity-40">
+<div class="flex justify-between w-full">
+    <div class="font-normal">
+        <p class="text-sm">royal bike</p>
+        <p class="text-xs">41245 likes - 435 shares</p>
+    </div>
+    <div class="flex item-center">
+        <img src="assets/images/bookmark-icon.ico" alt="bookmark">
+    </div>
+</div>
+</div>
+</div>
+ <!-- img 4-->
+ <div class="relative group">
+    <img src="assets/images/club.jpg" alt="" class="w-72">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 
+    group-hover:opacity-100 bg-opacity-40">
+<div class="flex justify-between w-full">
+    <div class="font-normal">
+        <p class="text-sm">Party club</p>
+        <p class="text-xs">91245 likes - 95235 shares</p>
+    </div>
+    <div class="flex item-center">
+        <img src="assets/images/bookmark-icon.ico" alt="bookmark">
+    </div>
+</div>
+</div>
+</div>
+ <!-- img 5-->
+ <div class="relative group">
+    <img src="assets/images/rotate.jpg" alt="" class="w-72">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 
+    group-hover:opacity-100 bg-opacity-40">
+<div class="flex justify-between w-full">
+    <div class="font-normal">
+        <p class="text-sm">Abstact buliding</p>
+        <p class="text-xs">81245 likes - 2235 shares</p>
+    </div>
+    <div class="flex item-center">
+        <img src="assets/images/bookmark-icon.ico" alt="bookmark">
+    </div>
+</div>
+</div>
+</div>
+ <!-- img 6-->
+ <div class="relative group">
+    <img src="assets/images/shoball.jpg" alt="" class="w-72">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 
+    group-hover:opacity-100 bg-opacity-40">
+<div class="flex justify-between w-full">
+    <div class="font-normal">
+        <p class="text-sm">Sports</p>
+        <p class="text-xs">17545 likes - 635 shares</p>
+    </div>
+    <div class="flex item-center">
+        <img src="assets/images/bookmark-icon.ico" alt="bookmark">
+    </div>
+</div>
+</div>
+</div>
+    </div>
+
+    </div>
+
+
+
+ </div>
+</body>
+</html>
